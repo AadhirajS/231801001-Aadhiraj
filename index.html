@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" id="firstName"></td>
+                </tr>
+                <tr><td></td><td><span class="error" id="firstNameError"></span></td></tr>
+
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" id="lastName"></td>
+                </tr>
+                <tr><td></td><td><span class="error" id="lastNameError"></span></td></tr>
+
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" id="age"></td>
+                </tr>
+                <tr><td></td><td><span class="error" id="ageError"></span></td></tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr><td></td><td><span class="error" id="emailError"></span></td></tr>
+
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" id="dob"></td>
+                </tr>
+                <tr><td></td><td><span class="error" id="dobError"></span></td></tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td class="gender-container">
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                    </td>
+                </tr>
+                <tr><td></td><td><span class="error" id="genderError"></span></td></tr>
+
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel" id="phone"></td>
+                </tr>
+                <tr><td></td><td><span class="error" id="phoneError"></span></td></tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea rows="4" id="address"></textarea></td>
+                </tr>
+                <tr><td></td><td><span class="error" id="addressError"></span></td></tr>
+
+                <tr>
+                    <td colspan="2"><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
